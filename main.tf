@@ -3,12 +3,12 @@
 #
 
 /*
+- https://alexharv074.github.io/2019/11/23/adventures-in-the-terraform-dsl-part-x-templates.html
 - https://learn.hashicorp.com/tutorials/terraform/functions?in=terraform/configuration-language
 - https://www.terraform.io/docs/language/functions/templatefile.html
 - https://www.terraform.io/docs/language/functions/file.html
 - https://registry.terraform.io/providers/hashicorp/template/latest/docs
 - https://registry.terraform.io/providers/hashicorp/template/latest/docs/data-sources/file
-- https://alexharv074.github.io/2019/11/23/adventures-in-the-terraform-dsl-part-x-templates.html
 
 - https://www.terraform.io/docs/language/providers/configuration.html
 - https://www.terraform.io/docs/language/functions/templatefile.html
@@ -49,7 +49,7 @@ output "template" {
 
 
 
-/*
+
 # write the rendered template to Github Enterprise Repo
 # https://registry.terraform.io/providers/integrations/github/latest/docs
 
@@ -57,7 +57,6 @@ output "template" {
 # This demo requires setting the environment variable "GITHUB_TOKEN" and "GITHUB_OWNER"
 # https://registry.terraform.io/providers/integrations/github/latest/docs#token
 provider "github" {
-  version = "~> 4.0"
 }
 
 # https://registry.terraform.io/providers/integrations/github/latest/docs/resources/repository
@@ -77,4 +76,4 @@ resource "github_repository_file" "foo" {
   commit_email        = "terraform@example.com"
   overwrite_on_create = true
 }
-*/
+

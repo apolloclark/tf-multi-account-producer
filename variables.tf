@@ -48,10 +48,18 @@ variable "cloud_providers" {
         alias = "azure-account-alpha"
         region = ""
       },
+      {
+        alias = "azure-account-beta"
+        region = ""
+      },
     ]
     "gcp" = [
       {
         alias = "gcp-account-alpha"
+        region = ""
+      },
+      {
+        alias = "gcp-account-beta"
         region = ""
       },
     ]

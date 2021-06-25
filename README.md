@@ -28,9 +28,10 @@ curl -s -I -u ${GITHUB_OWNER}:${GITHUB_TOKEN} https://api.github.com/user | grep
 
 
 # Run locally
+terraform init
 terraform validate -var-file=terraform.tfvars
 terraform plan -var-file=terraform.tfvars
-terraform apply -var-file=terraform.tfvars
+terraform apply -auto-approve -var-file=terraform.tfvars
 
 
 
