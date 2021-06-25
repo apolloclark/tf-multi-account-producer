@@ -1,2 +1,5 @@
 .project
 terraform.tfvars
+.terraform
+.terraform.*
+terraform.tfstate
