@@ -63,6 +63,8 @@ provider "github" {
 resource "github_repository" "git_repo" {
   name      = var.git_repo_consumer_name
   auto_init = true
+  visibility = "private"
+  topics = []
 }
 
 # https://registry.terraform.io/providers/integrations/github/latest/docs/resources/repository_file

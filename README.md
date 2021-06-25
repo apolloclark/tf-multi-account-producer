@@ -1,5 +1,9 @@
 # tf-multi-account-producer
 Demo for TFC / TFE to perform a single TF Run against multiple Cloud Accounts.
+
+THIS DEMO SHOULD BE USED WITH CAUTION, SINCE IT COULD BE USED IN AN INSECURE
+WAY THAT WOULD PUBLISH ALL OF YOUR CLOUD CREDENTIALS.
+
 The flow is:
 - USE TF 0.15.0 AND NEWER!!!
 - set your Github Owner (username) and Github Token
