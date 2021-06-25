@@ -34,12 +34,10 @@ variable "cloud_providers" {
     "aws" = [
       {
         alias = "aws-account-alpha"
-        version = "~>3.47.0"
         region = "us-east-1"
       },
       {
         alias = "aws-account-beta"
-        version = "~>3.47.0"
         region = "us-east-1"
       },
     ],
